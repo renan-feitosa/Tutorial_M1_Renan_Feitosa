@@ -1,9 +1,9 @@
 extends Node # instancia a classe Node2D
 
-var status = 1
-var vscore = 0
-var x = 1.5 
-var y = 1.5 
+var status = 1 #Mostra se o dragão está vivo (1) ou morto (0)
+var vscore = 0 #Número de obstáculos ultrapassados
+var x = 3 #Movimentação no eixo x, usado para obstáculos e background (Aumentado de 1.5 para 3)
+var y = 1.5 #Movimentação no eixo y, usado para fazer o dragão cair constanstemente
 
 # executa essa função ao carregar o jogo
 func _ready():
