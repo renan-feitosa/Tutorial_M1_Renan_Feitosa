@@ -54,6 +54,20 @@ margin_bottom = 309.0
 align = 1
 valign = 1
 
+[node name="Label3" type="Label" parent="."]
+margin_left = 52.0
+margin_top = 139.0
+margin_right = 95.0
+margin_bottom = 153.0
+text = "Número"
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 61.0
+margin_top = 267.0
+margin_right = 107.0
+margin_bottom = 281.0
+text = "Nome"
+
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
 [connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
