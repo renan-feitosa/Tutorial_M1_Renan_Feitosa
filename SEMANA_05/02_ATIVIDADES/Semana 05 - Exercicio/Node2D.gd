@@ -15,9 +15,9 @@ func _on_Button_pressed():
 func _on_Button2_pressed():
 	#Incrementando o número inserido pelo usuário
 	for i in range(10):
-		numero+=i #variável escrita de forma errada (Numero -> numero)
+		numero += i #variável escrita de forma errada (Numero -> numero)
 		lista.append(numero) #variável escrita de forma errada (Numero -> numero)
-	$Label.text = numero
+	$Label.text = str(numero) #Transformar array numero em string
 
 
 func _on_Button3_pressed():
