@@ -11,7 +11,6 @@ func _on_Button_pressed():
 	numero = int($LineEdit.text) #Os nomes das variáveis não podem conter letras com acentos (número -> numero) / É necessário um $ para chamar outro node (LineEdit -> $LineEdit)
 	nome = $LineEdit2.text #Linha escrita ao contrário e sem declaração de variável ($LineEdit2.text = nome -> v ar nome = $LineEdit2.text)
 
-
 func _on_Button2_pressed():
 	#Incrementando o número inserido pelo usuário
 	lista = []
@@ -31,7 +30,8 @@ func _on_Button3_pressed():
 	while i < len(lista): #Falta parâmetros para o while (while(len(lista)) -> while i < len(lista)
 		if(lista[i]%2==1):
 			cont += 1
-		if(cont == 1 and lista[i]%2==1): #O parâmetro retornava verdadeiro se fosse diferente de zero, não com o necessário para re
+		if(cont == 1): #O parâmetro retornava verdadeiro se fosse diferente de zero, não com o necessário para re
 			nome = nome + "baldo" #Caso for impar e cont for igual a 1, adiciona "baldo"
+			break
 		i += 1
 	$Label2.text = nome #"nome" foi declarado como variável local da função "on button pressed". Precisa ser declarado fora da função para esta linha funcionar
